@@ -8,6 +8,7 @@ function App() {
   // Reducer use kia gya hai todos ko manage krne k liye
   const [todos, dispatch] = useReducer(todoReducer, [], () => {
     const localData = localStorage.getItem("todos");
+    setInterval(() => {}, interval);
     // return empty arry if not meet the condition
     return localData ? JSON.parse(localData) : [];
   });
