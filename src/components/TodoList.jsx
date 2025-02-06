@@ -1,6 +1,6 @@
 import { Droppable } from "@hello-pangea/dnd";
 // import todoitesms
-import TodoItem from "./Todoitem";
+import TodoItem from "./TodoItem";
 
 // ( TodoList jo sabhi todos tasks ko render karega )
 const TodoList = ({ todos, dispatch }) => {
