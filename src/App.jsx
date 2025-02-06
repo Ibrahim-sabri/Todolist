@@ -8,9 +8,7 @@ function App() {
   // Reducer use kia gya hai todos ko manage krne k liye
   const [todos, dispatch] = useReducer(todoReducer, [], () => {
     const localData = localStorage.getItem("todos");
-    setInterval(() => {}, interval);
-    // return empty arry if not meet the condition
-    return localData ? JSON.parse(localData) : [];
+    return localData ? JSON.parse(localData) : []; // Agar localStorage main data hai to use karo, warna empty array return karo
   });
 
   // localStorage main save krne k liye koi bhi changing ki malumat
@@ -29,7 +27,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900 py-8 px-4">
-      <div className="max-w-md  bg-gray-800 text-white rounded-lg shadow-xl p-6">
+      <div className="max-w-md bg-gray-800 text-white rounded-lg shadow-xl p-6">
         <h1 className="text-3xl font-bold text-center mb-6 text-blue-400">
           Todo List
         </h1>
