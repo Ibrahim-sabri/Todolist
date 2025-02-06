@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900 py-8 px-4">
-      <div className="max-w-md bg-gray-800 text-white rounded-lg shadow-xl p-6">
+      <div className="max-w-md bg-gray-700 text-white rounded-lg shadow-xl p-6">
         <h1 className="text-3xl font-bold text-center mb-6 text-blue-400">
           Todo List
         </h1>
