@@ -2,7 +2,7 @@ import { useReducer, useEffect } from "react";
 import { DragDropContext } from "@hello-pangea/dnd";
 import { todoReducer } from "./reducers/todoReducer";
 import TodoList from "./components/TodoList";
-import AddTodo from "./components/Addtodo";
+import AddTodo from "./components/AddTodo";
 
 function App() {
   // Reducer use kia gya hai todos ko manage krne k liye
